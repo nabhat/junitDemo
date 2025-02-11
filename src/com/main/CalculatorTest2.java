@@ -2,21 +2,21 @@ package com.main;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
-public class CalculatorTest {
-	static Calculator calculator=null;
+public class CalculatorTest2 {
+	 Calculator calculator=null;
 
-	@BeforeClass
-	public static void init(){
+	@Before
+	public void init(){
 		calculator=new Calculator();
 		System.out.println("Testing stated");
 	}
 
-	@AfterClass
-	public static void stop(){
+	@After
+	public void stop(){
 		calculator = null;
 		System.out.println("All testing completed");
 	}
